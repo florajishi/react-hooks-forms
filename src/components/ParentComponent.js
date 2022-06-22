@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import DisplayData from "./DisplayData";
 import Form from "./Form";
 
 function ParentComponent(){
@@ -23,6 +24,10 @@ function ParentComponent(){
                 firstName={formData.firstName}
                 lastName={formData.lastName}
                 handleFormChange={handleFormChange}
+            />
+            <DisplayData 
+                firstName={formData.firstName}
+                lastName={formData.lastName}
             />
         </div>
     )
